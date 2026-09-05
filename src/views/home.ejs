@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= titulo %> </title>
+</head>
+<body>
+    <header>
+        <h1><%= titulo %></h1>
+    </header>
+    <main>
+        <section>
+            <h2> Teste de servidor</h2>
+            
+            <% if(candidatos && candidatos.length > 0) { %>
+                <ul>
+                    <% candidatos.forEach(candidato => { %>
+                        <li>
+                            <a href="/candidato/<%= candidato.numeroUrna %>">
+                                <%= candidato.nome %> - <%= candidato.numeroUrna %>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul> <%# O </ul> correto fica aqui, pois a lista acabou %>
+            <% } else { %>
+                <p>Nenhum candidato encontrado.</p>
+            <% } %>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "eleicoes",
+  "version": "1.0.0",
+  "description": "eleições ficticias ",
+  "homepage": "https://github.com/claranogrmoura/eleicoes#readme",
+  "bugs": {
+    "url": "https://github.com/claranogrmoura/eleicoes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claranogrmoura/eleicoes.git"
+  },
+  "license": "MIT",
+  "author": "claranogrmoura",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
