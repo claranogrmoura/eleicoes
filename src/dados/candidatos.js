@@ -3,14 +3,14 @@ const candidatos = [
         id: 1,
         nome: "Rick Sanchez",
         origem: "Terra ",
-        numeroUrna: 3200,
+        numeroUrna: 320,
         foto: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
     },
     {   
         id: 2,
         nome: "Molly Sanchez",
         origem: "Terra ",
-        numeroUrna: 16,
+        numeroUrna: 160,
         foto: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
     },
     {   
