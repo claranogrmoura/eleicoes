@@ -18,7 +18,11 @@ export class Eleicao {
     const candidato = new Candidato(id,nome,numeroUrnaNovo)
     this.candidatos.push(candidato)
 
+    atualizarCandidatos
+    
+
 }
+  
 ListarCandidatos (){ //metodo listar candidatos
     return this.candidatos
 }
@@ -35,11 +39,16 @@ return this.candidatos.map((candidato) => { /// lista de candidatos, map para pe
         numeroUrna: candidato.numeroUrna,
         votos: recebidos.length
     }
+
+    
 })
 
- }
-
 }
+}
+
+
+
+
 
 
 

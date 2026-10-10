@@ -17,7 +17,19 @@ candidatoRouter.get('/candidatos/:numero', (req, res) => {
 }else{
     res.status(404).json({error: "Candidato não encontrado"})
 }
-})
+});
 
+ candidatoRouter.patch('/candidatos/:numero', (req, res) => {
+    const numero = parseInt(req.params.numero)
+    const candidato = candidatos.find(cand => cand.numeroUrna === numero)
+    if(candidato){ 
+        const { nome, numeroUrna } = req.body
+        if(nome) candidato.nome = nome 
+        if (numeroUrna) candidato.numeroUrna = numeroUrna
+        res.status(200).json(candidato)
+    } else {
+        res.status(404).json({error: "Candidato não encontrado"})
+    } 
+})
 
 export default candidatoRouter
